@@ -1,29 +1,35 @@
-import React from 'react';
+import { pulse, navbarStyles, navListStyles, navItemStyles, navLinkStyles, navIconStyles, navLabelStyles, statusDotStyles, navTooltipStyles,  } from "./NavBarStyle.js";
 
 const NavBar = () => {
   return (
-    <nav className="flex items-center justify-between p-4 bg-white shadow-md">
-      <ul className="flex space-x-4">
-        <li className="nav-item">
-          <a href="#" className="nav-link flex items-center space-x-2">
-            <span className="nav-icon">🏠</span>
-            <span className="nav-label relative">Home</span>
+    <div css={navbarStyles}>
+      <ul css={navListStyles}>
+        <li css={navItemStyles}>
+          <a href="#" css={navLinkStyles}>
+            <span css={navIconStyles}>🏠</span>
+            <span css={navLabelStyles}>Home</span>
+            <span css={statusDotStyles}></span>
+            <span css={navTooltipStyles}>Home</span>
           </a>
         </li>
-        <li className="nav-item">
-          <a href="#" className="nav-link flex items-center space-x-2">
-            <span className="nav-icon">📄</span>
-            <span className="nav-label relative">Documents</span>
+        <li css={navItemStyles}>
+          <a href="#" css={navLinkStyles}>
+            <span css={navIconStyles}>📄</span>
+            <span css={navLabelStyles}>Documents</span>
+            <span css={statusDotStyles}></span>
+            <span css={navTooltipStyles}>Documents</span>
           </a>
         </li>
-        <li className="nav-item">
-          <a href="#" className="nav-link flex items-center space-x-2">
-            <span className="nav-icon">📞</span>
-            <span className="nav-label relative">Contact</span>
+        <li css={navItemStyles}>
+          <a href="#" css={navLinkStyles}>
+            <span css={navIconStyles}>📞</span>
+            <span css={navLabelStyles}>Contact</span>
+            <span css={statusDotStyles}></span>
+            <span css={navTooltipStyles}>Contact</span>
           </a>
         </li>
       </ul>
-    </nav>
+    </div>
   );
 };
 
